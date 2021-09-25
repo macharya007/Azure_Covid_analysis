@@ -1,5 +1,5 @@
 {
-	"name": "cases_and_deaths_dl",
+	"name": "cases_and_deaths_ds",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "covidanalysisdlsa_ls",

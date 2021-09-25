@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "cases_and_deaths_dl",
+						"referenceName": "cases_and_deaths_ds",
 						"type": "DatasetReference"
 					},
 					"name": "CasesAndDeathsSource"
