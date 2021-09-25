@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covid-reportanalysis-adf1"
+		},
+		"covidanalysisdlsa_ls_accountKey": {
+			"value": ""
+		},
+		"covidanalysissa2134_ls_connectionString": {
+			"value": ""
+		},
+		"HttpServer_ls_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"covidanalysisdlsa_ls_properties_typeProperties_url": {
+			"value": "https://covidanalysisdlsa.dfs.core.windows.net"
+		},
+		"CopyTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f2ba2638-9d45-4a9f-8e99-42c1ed0d3954/resourceGroups/Covid-rgrp/providers/Microsoft.Storage/storageAccounts/covidanalysissa2134"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
