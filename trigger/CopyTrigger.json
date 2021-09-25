@@ -1,0 +1,25 @@
+{
+	"name": "CopyTrigger",
+	"properties": {
+		"description": "Schedule trigger for copying data",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copy_data_pl",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/f2ba2638-9d45-4a9f-8e99-42c1ed0d3954/resourceGroups/Covid-rgrp/providers/Microsoft.Storage/storageAccounts/covidanalysissa2134",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
